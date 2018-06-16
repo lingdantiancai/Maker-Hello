@@ -1,0 +1,27 @@
+‘maker-hello’
+1.添加会员：
+	a)如果你想新添加一个会员用户，那么请在照相机上拍一张具有个人头像的照片。将他命名为‘test.jpg’
+	b)将命名后照片，放于与 find_face_location_from_photo.py 同一文件夹下的face文件夹中。然后运行该程序。然后你会得到从之前照片中截取的人脸部位
+	c）然后将上一步骤所获取照片放入img文件夹中。便完成人脸库的添加。
+
+2.个性化语音设置
+	在我们的主目录里面，有yuyinhecheng.py以及Hello-audio文件夹。
+	a）在Hello-audio文件中，有equipment, opendoor, sayhello, stranger四个文件夹。我们打开sayhello文件夹
+	b）在sayhello中建立对应人名的文件夹。比如‘高鱼鱼’则建立 名称为‘gaoyuyu’的文件夹。
+	c）然后在主目录里面通过任意一编辑器打开yuyinhecheng.py。 在程序的末尾path一行处，进行语音添加。
+	d）这里分别有四个参数，第一个参数 表示人名，第二个参数表示该条语音的等级，第三个参数便是需要产生的语音信息，第四个参数保持默认即可。
+	e）这样，你便完成了语音的添加。当你再次进入空间的时候，便会有个性化的语音提示。
+例：在‘高鱼鱼’目录下设置一条等级为1 的问好；问好信息为‘你好，主人’
+path = hecheng('gaoyuyu',1,'你好，主人。','sayhello')
+
+注：语音等级，当你的语音文件夹中含有等级大于1 的语音信息时，那么优先播放该语音。同时播放完毕后，删除该语音。
+
+
+
+如果你想在其他设备上想使用这个‘你好’语音平台，那么你需要提前安装好一下库文件
+numpy
+matplotlib
+opencv
+face_recogniton
+playsound
+baidu-API
